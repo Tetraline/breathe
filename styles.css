@@ -1,0 +1,116 @@
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+#boxes {
+  position: absolute;
+  left: 20%;
+  top: 40%;
+  display: flex;
+  flex-wrap: wrap;
+  width: 150px;
+  margin: 0;
+  align-items: center;
+  background-color: lightgray;
+  opacity: 75%;
+  border-radius: 5%;
+}
+
+.box {
+  width: 20px;
+  height: 20px;
+  margin: 5px;
+  border-radius: 10%;
+}
+
+.grey {
+  background-color: grey;
+}
+
+.green {
+  background-color: green;
+}
+
+#clock {
+  position: absolute;
+  top: 10%;
+  left: 20%;
+  width: 150px;
+  height: 150px;
+  background-color: lightgray;
+  border-radius: 50%;
+  opacity: 75%;
+}
+
+#arm {
+  top: 50%;
+  left: calc(50% - 1.25px);
+  position: absolute;
+  content: "";
+  height: 75px;
+  width: 5px;
+  background: black;
+  border-radius: 5px;
+  animation: spin 8.5s linear infinite;
+  transform-origin: top;
+}
+
+#line {
+  height: 150px;
+  width: 2px;
+  background: darkgray;
+  position: absolute;
+  left: calc(50% - 1px);
+}
+
+#centre {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: darkgray;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+#clock-left {
+  position: absolute;
+  font-size: xx-small;
+  width: 10px;
+  top: 40%;
+  left: 5%;
+}
+
+#clock-right {
+  top: 40%;
+  left: 60%;
+  position: absolute;
+  font-size: xx-small;
+  width: 10px;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(-180deg);
+  }
+  100% {
+    transform: rotate(180deg);
+  }
+}
+
+.bg {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  position: absolute;
+  background-image: url("image.jpg");
+  height: 100%;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+}
