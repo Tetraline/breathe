@@ -18,7 +18,7 @@ async function animate() {
     box = document.getElementById(i);
     box.classList.remove("grey");
     box.classList.add("green");
-    await delay(8500);
+    await delay(2000);
   }
 }
 
