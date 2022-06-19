@@ -52,7 +52,7 @@ body {
   width: 5px;
   background: black;
   border-radius: 5px;
-  animation: spin 8.5s linear infinite;
+  animation: spin 2s linear infinite;
   transform-origin: top;
 }
 
